@@ -1,0 +1,45 @@
+.navbar a{
+    margin-left: 50px;     
+}
+
+.nav-logo{
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    background-color: black;
+}
+
+.nav-logo img{
+    width: 300px;
+    height: 70px;
+}
+
+.nav-logo a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: larger;
+    margin-right: 20px;
+    border: 2px solid rgb(14, 103, 131);
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(210, 241, 250, 0.226);
+    color: azure;
+}
+
+@media only screen and   (max-width: 576px) {
+ 
+  
+    .nav a{
+        grid-template-columns: repeat(1,1fr);
+        display: grid;
+    }
+    .nav-logo {
+        grid-template-columns: repeat(1,1fr);
+        display: grid;
+        height: 200px;
+    }
+    
+  
+}

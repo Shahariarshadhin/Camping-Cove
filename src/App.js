@@ -1,11 +1,15 @@
 
 import './App.css';
-import { Button, Col, Row } from 'react-bootstrap';
+
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>CAMPING COVE</h1>
+
+      <Header></Header>
+      <Home></Home>
     </div>
   );
 }
