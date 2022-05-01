@@ -1,4 +1,5 @@
 import React from 'react';
+import './Gear.css'
 
 const Gear = ({ gear }) => {
 
@@ -9,6 +10,11 @@ const Gear = ({ gear }) => {
             <h2>{name}</h2>
             <p>Price: {price}</p>
             <p><small>{description}</small></p>
+
+            <button className='update-btn ' type="">Update Gear</button>
+
+
+
 
         </div>
     );

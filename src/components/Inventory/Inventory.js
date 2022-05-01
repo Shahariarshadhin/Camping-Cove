@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Gear from '../Gear/Gear';
+import './Inventory.css'
 
 const Inventory = () => {
 
@@ -14,15 +15,17 @@ const Inventory = () => {
 
             <h1>inventory</h1>
 
-            {
-                gears.map(gear => <Gear
+            <div className="gear-box">
+                {
+                    gears.map(gear => <Gear
 
-                    key={gear._id}
-                    gear={gear}
+                        key={gear._id}
+                        gear={gear}
 
 
-                ></Gear>)
-            }
+                    ></Gear>)
+                }
+            </div>
 
         </div>
     );
