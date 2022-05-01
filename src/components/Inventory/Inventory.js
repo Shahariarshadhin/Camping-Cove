@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Footer from '../Footer/Footer';
 import Gear from '../Gear/Gear';
 import './Inventory.css'
 
@@ -26,6 +27,8 @@ const Inventory = () => {
                     ></Gear>)
                 }
             </div>
+
+            <Footer></Footer>
 
         </div>
     );

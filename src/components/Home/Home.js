@@ -1,5 +1,6 @@
 
 import banner from '../../images/banner.jpg'
+import Footer from '../Footer/Footer';
 import Gear from '../Gear/Gear';
 import useGear from '../hook/useGear';
 
@@ -27,13 +28,10 @@ const Home = () => {
                         ></Gear>)
                     }
 
-
-
-
-
-
-
                 </div>
+            </div>
+            <div>
+                <Footer></Footer>
             </div>
         </div>
 
