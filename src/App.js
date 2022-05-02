@@ -1,6 +1,8 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import About from './components/About/About';
+import GearDetails from './components/GearDetails/GearDetails';
 
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -22,6 +24,8 @@ function App() {
         <Route path='/inventory' element={<Inventory></Inventory>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
+        <Route path='/gear/:gearId' element={<GearDetails></GearDetails>}></Route>
 
       </Routes>
     </div>

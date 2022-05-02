@@ -1,9 +1,15 @@
 import React from 'react';
-import './Gear.css'
+import './Gear.css';
+import { useNavigate } from 'react-router-dom';
 
 const Gear = ({ gear }) => {
 
-    const { name, img, description, price } = gear;
+    const { _id, name, img, description, price } = gear;
+    const navigate = useNavigate();
+
+    const navigateGear = id => {
+        navigate(`/gear/${id}`)
+    }
     return (
         <div className='gear'>
             <img className='w-100' src={img} alt="" />
@@ -11,7 +17,7 @@ const Gear = ({ gear }) => {
             <p>Price: {price}</p>
             <p><small>{description}</small></p>
 
-            <button className='update-btn ' type="">Update Gear</button>
+            <button onClick={() => navigateGear(_id)} className='update-btn ' type="">Update Gear</button>
 
 
 
