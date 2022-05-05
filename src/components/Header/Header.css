@@ -28,6 +28,18 @@
     color: azure;
 }
 
+.signOut-btn{
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: larger;
+    margin-right: 20px;
+    border: 2px solid rgba(20, 57, 68, 0.13);
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgb(139, 226, 253);
+    cursor: pointer;
+}
+
 @media only screen and   (max-width: 576px) {
  
   

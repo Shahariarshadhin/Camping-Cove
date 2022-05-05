@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import banner from '../../images/banner.jpg'
 import Footer from '../Footer/Footer';
 import Gear from '../Gear/Gear';
@@ -26,8 +27,15 @@ const Home = () => {
 
 
                         ></Gear>)
+
+
                     }
 
+
+
+                </div>
+                <div className='link-btn'>
+                    <Link to="/inventory">Manage Inventory</Link>
                 </div>
             </div>
             <div>
