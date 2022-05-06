@@ -6,7 +6,7 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "4500",
         "available": "150",
-        "supplier name" : "KM khan"
+        "supplier-name" : "KM khan"
     },
     {
         
@@ -15,7 +15,7 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "2000",
         "available": "150",
-        "supplier name" : "MR Maruf"
+        "supplier-name" : "MR Maruf"
     },
     {
         
@@ -24,7 +24,7 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "500",
         "available": "150",
-        "supplier name" : "Shakib Hasan"
+        "supplier-name" : "Shakib Hasan"
     },
     {
         
@@ -33,7 +33,7 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "2500",
         "available": "150",
-        "supplier name" : "Rafiqul Islam"
+        "supplier-name" : "Rafiqul Islam"
     },
     {
         
@@ -42,7 +42,7 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "1000",
         "available": "150",
-        "supplier name" : "Monirul Hakim"
+        "supplier-name" : "Monirul Hakim"
     },
     {
         
@@ -51,7 +51,7 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "500",
         "available": "150",
-        "supplier name" : "KM Mushfiq"
+        "supplier-name" : "KM Mushfiq"
     },
     {
         
@@ -60,7 +60,7 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "450",
         "available": "150",
-        "supplier name" : "Shahed"
+        "supplier-name" : "Shahed"
     },
     {
         
@@ -69,7 +69,7 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "2500",
         "available": "150",
-        "supplier name" : "Tamim Tanzil"
+        "supplier-name" : "Tamim Tanzil"
     },
     {
         
@@ -78,7 +78,7 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "400",
         "available": "150",
-        "supplier name" : "Anmul Haque"
+        "supplier-name" : "Anmul Haque"
     },
     {
         
@@ -87,7 +87,7 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "300",
         "available": "150",
-        "supplier name" : "Karim Benzema"
+        "supplier-name" : "Karim Benzema"
     },
     {
         
@@ -96,6 +96,6 @@
         "description": "The Product is good.It is a fresh product and there is no problem i can find in this product.",
         "price": "2500",
         "available": "150",
-        "supplier name" : "Shadhin"
+        "supplier-name" : "Shadhin"
     }
 ]

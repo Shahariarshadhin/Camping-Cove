@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Gear = ({ gear }) => {
 
-    const { _id, name, img, description, price } = gear;
+    const { _id, name, img, description, price, supplier_name, available } = gear;
     const navigate = useNavigate();
 
     const navigateGear = id => {
@@ -16,6 +16,9 @@ const Gear = ({ gear }) => {
             <h2>{name}</h2>
             <p>Price: {price}</p>
             <p><small>{description}</small></p>
+            <p>Supplier :{supplier_name}</p>
+            <p>Available :{available}</p>
+
 
             <button onClick={() => navigateGear(_id)} className='update-btn ' type="">Update Gear</button>
 
