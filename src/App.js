@@ -7,10 +7,14 @@ import GearDetails from './components/GearDetails/GearDetails';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Inventory from './components/Inventory/Inventory';
+import CampingSummer from './components/KnowledgeCenter/CampingSummer';
+import GearBackpackingList from './components/KnowledgeCenter/GearBackpackingList';
+import TentBuyingGuide from './components/KnowledgeCenter/TentBuyingGuide';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import Register from './components/Register/Register';
 import RequireAuth from './components/RequireAuth/RequireAuth';
+
 
 
 function App() {
@@ -38,6 +42,10 @@ function App() {
 
 
         }></Route>
+
+        <Route path='/campingSummer' element={<CampingSummer></CampingSummer>}></Route>
+        <Route path='/tentGuide' element={<TentBuyingGuide></TentBuyingGuide>}></Route>
+        <Route path='/gearBackpack' element={<GearBackpackingList></GearBackpackingList>}></Route>
 
       </Routes>
     </div>

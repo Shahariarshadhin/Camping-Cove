@@ -1,0 +1,39 @@
+/* .knowledgeCenter{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+} */
+.knowledgeCenter{
+    background-color: rgb(230, 227, 227);
+    padding: 20px;
+    border-radius: 10px;
+}
+.knowledgeCenter img:hover{
+    transform: scale(1.1, 1.1)
+}
+.container h2{
+    background-image: url(../../images/knowledegeBG.jpg);
+       
+    color: aliceblue;
+    padding: 10px ;
+    border-radius: 20px;
+
+
+
+}
+
+
+.knowledgeCenter a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: blue
+}
+
+.learn-btn{
+    border: 2px solid lightgrey;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: rgb(49, 135, 233);
+    color: aliceblue;
+}
+

@@ -4,6 +4,7 @@ import banner from '../../images/banner.jpg'
 import Footer from '../Footer/Footer';
 import Gear from '../Gear/Gear';
 import useGear from '../hook/useGear';
+import KnowledgeCenter from '../KnowledgeCenter/KnowledgeCenter';
 
 import './Home.css'
 
@@ -37,6 +38,9 @@ const Home = () => {
                 <div className='link-btn'>
                     <Link to="/inventory">Manage Inventory</Link>
                 </div>
+            </div>
+            <div>
+                <KnowledgeCenter></KnowledgeCenter>
             </div>
             <div className='mt-5 subscribe'>
                 <h5>Subscribe to Our Email List</h5>
