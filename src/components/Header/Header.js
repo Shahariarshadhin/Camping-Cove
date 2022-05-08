@@ -19,25 +19,27 @@ const Header = () => {
     }
     return (
         <div>
-            <nav className='nav-logo'>
-                <div>
-                    <img src={logo} alt="" />
-                </div>
-                <div>
-                    {
-                        user && <>
-                            <Link to="/manageItems">Manage Items</Link>
-                            <Link to="/addItem">Add Item</Link>
-                            <Link to="/myItems">My items</Link>
-                        </>
-                    }
-                    {
-                        user ?
-                            <button className='signOut-btn' onClick={handleSignOut}>Sign Out</button>
-                            :
-                            <Link to="/login" >Login</Link>
-                    }
-                    <Link to="/register" >Register</Link>
+            <nav >
+                <div className='nav-logo'>
+                    <div>
+                        <img src={logo} alt="" />
+                    </div>
+                    <div>
+                        {
+                            user && <>
+                                <Link to="/manageItems">Manage Items</Link>
+                                <Link to="/addItem">Add Item</Link>
+                                <Link to="/myItems">My items</Link>
+                            </>
+                        }
+                        {
+                            user ?
+                                <button className='signOut-btn' onClick={handleSignOut}>Sign Out</button>
+                                :
+                                <Link to="/login" >Login</Link>
+                        }
+                        <Link to="/register" >Register</Link>
+                    </div>
                 </div>
             </nav>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
@@ -55,13 +57,17 @@ const Header = () => {
                                 <Nav.Link>Inventory</Nav.Link>
                             </LinkContainer>
 
-                            <LinkContainer to="/about">
-                                <Nav.Link>About</Nav.Link>
-                            </LinkContainer>
+
 
                             <LinkContainer to="/blogs">
                                 <Nav.Link>Blogs</Nav.Link>
                             </LinkContainer>
+
+                            <LinkContainer to="/about">
+                                <Nav.Link>About</Nav.Link>
+                            </LinkContainer>
+
+
 
 
                         </Nav>

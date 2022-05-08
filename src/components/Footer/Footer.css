@@ -3,7 +3,7 @@
     color: aliceblue;
     height: 70px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
     align-items: center;
     margin-top: 20px;

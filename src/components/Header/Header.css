@@ -47,10 +47,20 @@
         grid-template-columns: repeat(1,1fr);
         display: grid;
     }
-    .nav-logo {
+    .nav-logo{
         grid-template-columns: repeat(1,1fr);
         display: grid;
-        height: 200px;
+        height: 400px;
+    }
+    .nav-logo a{
+        grid-template-columns: repeat(1,1fr);
+        display: grid;
+        width: 290px;
+        margin-bottom: 4px;
+        
+    }
+    .signOut-btn{
+        width: 190px;
     }
     
   

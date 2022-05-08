@@ -9,7 +9,10 @@ const Footer = () => {
 
 
             <div>
-                <p> Copyright < FaCopyright style={{ fontSize: '12px' }} ></FaCopyright>2022 </p>
+                <p> Copyright < FaCopyright style={{ fontSize: '12px' }} ></FaCopyright>2022-24 CC | All Rights Reserved </p>
+            </div>
+            <div>
+                <h4 ><i>Camping Cove</i></h4>
             </div>
             <div className='social'>
 
