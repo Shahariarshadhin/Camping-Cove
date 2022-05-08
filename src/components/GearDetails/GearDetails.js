@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Card, Form } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import './GearDetails.css'
 
 const GearDetails = () => {
     const { gearId } = useParams();
@@ -141,12 +142,13 @@ const GearDetails = () => {
                 </Card.Body>
             </Card>
             <div className="form-container mx-auto mt-5 mb-5">
-                <Form
-                    onSubmit={handleUpdateDeleveredQuentity}
-                    className="form-body mx-auto"
-                >
-                    {/* Multiple unite delevery operation */}
-                    <Form.Group className="mb-3">
+                <div className="update-deliver">
+                    <Form
+                        onSubmit={handleUpdateDeleveredQuentity}
+                        className="form-body mx-auto"
+                    >
+                        {/* Multiple unite delevery operation */}
+                        {/* <Form.Group className="mb-3">
                         <Form.Label>Put the quantity of delevered gear</Form.Label>
                         <Form.Control
                             name="delevered"
@@ -171,56 +173,60 @@ const GearDetails = () => {
                         <span className="mx-1">Delevered</span>
                     </Button>
                     <hr />
+ */}
+                        {/* single unite delevery operation */}
+                        <p>Click here for single unite delevery</p>
+                        <Button
+                            onClick={handleSingleUniteDelevery}
+                            className="mb-3 "
+                            variant="primary"
+                            type="submit"
+                        >
+                            <i
+                                className="fa-solid fa-truck"
+                                style={{ transform: "rotateY(180deg)" }}
+                            ></i>
+                            <span className="mx-1">Delivered</span>
+                        </Button><hr />
+                        <Form.Text className="text-muted">
+                            Make sure the gear is delevered.
+                        </Form.Text>
 
-                    {/* single unite delevery operation */}
-                    <Form.Label>Click here for single unite delevery</Form.Label>
-                    <Button
-                        onClick={handleSingleUniteDelevery}
-                        className="mb-3 d-flex justify-content-center align-items-center"
-                        variant="primary"
-                        type="submit"
-                    >
-                        <i
-                            className="fa-solid fa-truck"
-                            style={{ transform: "rotateY(180deg)" }}
-                        ></i>
-                        <span className="mx-1">Delevered</span>
-                    </Button>
-                    <Form.Text className="text-muted">
-                        Make sure the gear is delevered.
-                    </Form.Text>
-
-                    <ToastContainer />
-                </Form>
+                        <ToastContainer />
+                    </Form>
+                </div>
             </div>
 
             {/* Re Stock Operations */}
             <div className="form-container mx-auto mt-5 mb-5">
-                <Form onSubmit={handleResockItemQuentity} className="form-body mx-auto">
-                    <h2> Restock the items</h2>
-                    {/* Multiple unite delevery operation */}
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Put the quantity of gear been Restocked</Form.Label>
-                        <Form.Control
-                            name="restocked"
-                            type="number"
-                            placeholder="How many delevered"
-                            required
-                        />
-                        <Form.Text className="text-muted">
-                            Make sure the gear is stocked.
-                        </Form.Text>
-                    </Form.Group>
+                <div>
+                    <Form onSubmit={handleResockItemQuentity} className="form-body mx-auto">
+                        <h2> Restock the items</h2>
+                        {/* Multiple unite delevery operation */}
+                        <Form.Group className="mb-3 mx-5 " controlId="formBasicEmail">
+                            <Form.Label>Put the quantity of gear been Restocked</Form.Label>
+                            <Form.Control
+                                className=" text-center update-deliver"
+                                name="restocked"
+                                type="number"
+                                placeholder="How many delevered"
+                                required
+                            />
+                            <Form.Text className="text-muted">
+                                Make sure the gear is stocked.
+                            </Form.Text>
+                        </Form.Group>
 
-                    <Button
-                        className="mb-3 d-flex justify-content-center align-items-center"
-                        variant="primary"
-                        type="submit"
-                    >
-                        <i className="fa-solid fa-cash-register"></i>
-                        <span className="mx-1">Restock</span>
-                    </Button>
-                </Form>
+                        <Button
+                            className="mb-3 "
+                            variant="primary"
+                            type="submit"
+                        >
+                            <i className="fa-solid fa-cash-register"></i>
+                            <span className="mx-1">Restock</span>
+                        </Button>
+                    </Form>
+                </div>
             </div>
             <div className="text-center">
                 <Link to="/mnagestock">

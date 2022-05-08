@@ -51,35 +51,37 @@ const Register = () => {
     return (
         <div >
             <div className='form-container'>
-                <div>
-                    <h2 className='form-title'>Register</h2>
-                    <form onSubmit={handleCreateUser}>
-                        <div className="input-group">
+                <div className='form-container-login'>
+                    <div>
+                        <h2 className='form-title'>Register</h2>
+                        <form onSubmit={handleCreateUser}>
+                            <div className="input-group">
 
-                            <input onBlur={handleEmailBlur} placeholder="Enter email" type="email" name="email" required />
-                        </div>
-                        <div className="input-group">
+                                <input onBlur={handleEmailBlur} placeholder="Enter email" type="email" name="email" required />
+                            </div>
+                            <div className="input-group">
 
-                            <input onBlur={handlePasswordBlur} placeholder="Enter Password" type="password" name="password" required />
+                                <input onBlur={handlePasswordBlur} placeholder="Enter Password" type="password" name="password" required />
 
-                        </div>
-                        <div className="input-group">
+                            </div>
+                            <div className="input-group">
 
-                            <input onBlur={handleConfirmPassword} placeholder="Confirm Password" type="password" name="confirm-password" required />
+                                <input onBlur={handleConfirmPassword} placeholder="Confirm Password" type="password" name="confirm-password" required />
 
-                        </div>
-                        <p style={{ color: 'red' }}>{error}</p>
-                        <input className='form-btn' type="submit" value="Register" />
-                    </form>
+                            </div>
+                            <p style={{ color: 'red' }}>{error}</p>
+                            <input className='form-btn' type="submit" value="Register" />
+                        </form>
 
-                    <p>
-                        Already Have an account?<Link className='form-link' to="/login">Login</Link>
-                    </p>
+                        <p>
+                            Already Have an account?<Link className='form-link' to="/login">Login</Link>
+                        </p>
 
-                    {/* <SocialLogin></SocialLogin> */}
+                        {/* <SocialLogin></SocialLogin> */}
 
 
 
+                    </div>
                 </div>
             </div>
         </div>
