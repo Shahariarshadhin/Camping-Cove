@@ -48,8 +48,8 @@ const Login = () => {
 
     }
     return (
-        <div className='form-container'>
-            <div className='form-container-login'>
+        <div className='form-container row'>
+            <div className='form-container-login col-'>
 
                 <div>
                     <h2 className='form-title'>Login</h2>
