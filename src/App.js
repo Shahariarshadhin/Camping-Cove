@@ -12,6 +12,7 @@ import CampingSummer from './components/KnowledgeCenter/CampingSummer';
 import GearBackpackingList from './components/KnowledgeCenter/GearBackpackingList';
 import TentBuyingGuide from './components/KnowledgeCenter/TentBuyingGuide';
 import Login from './components/Login/Login';
+import MyItems from './components/MyItems/MyItems';
 import NotFound from './components/NotFound/NotFound';
 import Register from './components/Register/Register';
 import RequireAuth from './components/RequireAuth/RequireAuth';
@@ -48,6 +49,7 @@ function App() {
         <Route path='/campingSummer' element={<CampingSummer></CampingSummer>}></Route>
         <Route path='/tentGuide' element={<TentBuyingGuide></TentBuyingGuide>}></Route>
         <Route path='/gearBackpack' element={<GearBackpackingList></GearBackpackingList>}></Route>
+        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
 
       </Routes>
     </div>

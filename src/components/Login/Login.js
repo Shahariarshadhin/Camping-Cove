@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-// import SocialLogin from '../SocialLogin/SocialLogin';
+
 import './Login.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
 
@@ -75,7 +76,7 @@ const Login = () => {
                         Forgot Password?<Link className='form-link' to="/login" onClick={resetPassword}>Reset Password</Link>
                     </p>
 
-                    {/* <SocialLogin></SocialLogin> */}
+                    <SocialLogin></SocialLogin>
                     <ToastContainer />
 
 

@@ -59,8 +59,11 @@ const AddItem = () => {
                 <h3 >Add New Item</h3>
                 <form className='d-flex flex-column ' onSubmit={handleSubmit(onSubmit)}>
                     <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
+                    <input className='mb-2' placeholder='Email ' type="email" {...register("email")} />
                     <textarea className='mb-2' placeholder='Description' {...register("description")} />
                     <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
+                    <input className='mb-2' placeholder='Supplier Name ' type="text" {...register("suppllier")} />
+                    <input className='mb-2' placeholder='Available' type="number" {...register("available")} />
                     <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
                     <input value="Upload Data" type="submit" />
                 </form>

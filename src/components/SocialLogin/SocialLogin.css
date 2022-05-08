@@ -1,0 +1,46 @@
+.divider{
+    height: 1px;
+    background-color: blue;
+    width: 50%;
+    
+}
+
+.sec-divider{
+    display: flex;
+    align-items: center;
+
+   
+   
+}
+.sec-divider p{
+    
+    padding: 8px;
+  
+}
+
+.google-btn{
+    background-color: bisque;
+    color: blue;
+    border: none;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+   
+   
+
+    
+
+}
+
+.google-btn img{
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    
+   
+
+}
+
+.btn-title{
+    margin-bottom: 3px;
+}
