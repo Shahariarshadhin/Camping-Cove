@@ -5,7 +5,7 @@ const AddItem = () => {
     const [gears, setGears] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/gear')
+        fetch('https://agile-fjord-18815.herokuapp.com/gear')
             .then(res => res.json())
             .then(data => setGears(data));
     }, []);
@@ -35,7 +35,7 @@ const AddItem = () => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const url = `http://localhost:5000/gear`;
+        const url = `https://agile-fjord-18815.herokuapp.com/gear`;
         fetch(url, {
             method: 'POST',
             headers: {

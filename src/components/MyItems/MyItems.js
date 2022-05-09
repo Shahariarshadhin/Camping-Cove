@@ -15,7 +15,7 @@ const MyItems = () => {
     useEffect(() => {
         const email = user?.email;
         console.log(email)
-        const url = (`http://localhost:5000/singlegear?email=${email}`);
+        const url = (`https://agile-fjord-18815.herokuapp.com/singlegear?email=${email}`);
         fetch(url, {
             method: "GET",
             headers: {
@@ -29,7 +29,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you Sure?');
         if (proceed) {
-            const url = (`http://localhost:5000/singlegear/=${id}`);
+            const url = (`https://agile-fjord-18815.herokuapp.com/singlegear/=${id}`);
             fetch(url, {
                 method: 'DELETE'
             })

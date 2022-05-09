@@ -8,18 +8,21 @@ const Gear = ({ gear }) => {
     const { _id, name, img, description, price, supplier_name, available } = gear;
     const navigate = useNavigate();
 
-    const handleDelete = id => {
+    const handleInvDelete = id => {
         const proceed = window.confirm('Are you Sure?');
         if (proceed) {
-            const url = (`http://localhost:5000/singlegear/=${id}`);
+            const url = (`https://agile-fjord-18815.herokuapp.com/gear/=${id}`);
             fetch(url, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data)
-                    const remaining = gears.filter(gear => gear._id !== id);
-                    setGears(remaining);
+                    if (data.deletedCount > 0) {
+                        console.log(data)
+                        const remaining = gears.filter(gear => gear._id !== id);
+                        setGears(remaining);
+
+                    }
                 })
         }
 
@@ -42,7 +45,7 @@ const Gear = ({ gear }) => {
 
             <button onClick={() => navigateGear(_id)} className='update-btn ' type="">Update Gear</button>
 
-            <button onClick={() => handleDelete(gear._id)} className='update-btn mx-2' type="">Delete</button>
+            <button onClick={() => handleInvDelete(gear._id)} className='update-btn mx-2' type="">Delete</button>
 
 
 

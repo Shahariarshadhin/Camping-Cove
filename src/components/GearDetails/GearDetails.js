@@ -9,13 +9,13 @@ const GearDetails = () => {
     const [gears, setGears] = useState({});
     const [count, setCount] = useState([]);
     useEffect(() => {
-        const url = (`http://localhost:5000/gear/${gearId}`);
+        const url = (`https://agile-fjord-18815.herokuapp.com/gear/${gearId}`);
         fetch(url)
             .then((response) => response.json())
             .then((data) => setGears(data));
     }, [gearId]);
     useEffect(() => {
-        const url = (`http://localhost:5000/gear/${gearId}`);
+        const url = (`https://agile-fjord-18815.herokuapp.com/gear/${gearId}`);
         fetch(url)
             .then((response) => response.json())
             .then((data) => setCount(data.available));
@@ -32,7 +32,7 @@ const GearDetails = () => {
         } else {
             const updatedInfo = { updatedQuentity };
             //send updated data in backend
-            const url = (`http://localhost:5000/gear/${gearId}`);
+            const url = (`https://agile-fjord-18815.herokuapp.com/gear/${gearId}`);
             fetch(url, {
                 method: "PUT",
                 headers: {
@@ -67,7 +67,7 @@ const GearDetails = () => {
         } else {
             const updatedInfo = { updatedQuentity };
             //send updated data in backend
-            const url = (`http://localhost:5000/gear/${gearId}`);
+            const url = (`https://agile-fjord-18815.herokuapp.com/gear/${gearId}`);
             fetch(url, {
                 method: "PUT",
                 headers: {
@@ -103,7 +103,7 @@ const GearDetails = () => {
         } else {
             const updatedInfo = { updatedQuentity };
             //send updated data in backend
-            const url = (`http://localhost:5000/gear/${gearId}`);
+            const url = (`https://agile-fjord-18815.herokuapp.com/gear/${gearId}`);
             fetch(url, {
                 method: "PUT",
                 headers: {
@@ -285,7 +285,7 @@ export default GearDetails;
 
 
 //     useEffect(() => {
-//         const url = (`http://localhost:5000/gear/${gearId}`);
+//         const url = (`https://agile-fjord-18815.herokuapp.com/gear/${gearId}`);
 
 //         fetch(url)
 //             .then(res => res.json())

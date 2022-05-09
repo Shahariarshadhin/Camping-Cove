@@ -4,7 +4,7 @@ const useGear = () => {
     const [gears, setGears] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/gear')
+        fetch('https://agile-fjord-18815.herokuapp.com/gear')
             .then(res => res.json())
             .then(data => setGears(data));
     }, []);
