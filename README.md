@@ -1,6 +1,6 @@
 # Camping Cove
 
-Live site [Camping Cove](https://camping-cove.web.app/).
+# Live site [Camping Cove](https://camping-cove.web.app/)
 
 - using react
 - using bootstarp
