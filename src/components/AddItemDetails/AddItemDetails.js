@@ -8,13 +8,13 @@
 //   const [gears, setGears] = useState({});
 //   const [count, setCount] = useState([]);
 //   useEffect(() => {
-//     const url = (`https://agile-fjord-18815.herokuapp.com/gear/${gearId}`);
+//     const url = (`https://camping-cove.onrender.com/gear/${gearId}`);
 //     fetch(url)
 //       .then((response) => response.json())
 //       .then((data) => setGears(data));
 //   }, [gearId]);
 //   useEffect(() => {
-//     const url = (`https://agile-fjord-18815.herokuapp.com/updateitem/${gearId}`);
+//     const url = (`https://camping-cove.onrender.com/updateitem/${gearId}`);
 //     fetch(url)
 //       .then((response) => response.json())
 //       .then((data) => setCount(data.quantity));
@@ -31,7 +31,7 @@
 //     } else {
 //       const updatedInfo = { updatedQuentity };
 //       //send updated data in backend
-//       const url = (`https://agile-fjord-18815.herokuapp.com/updateitem/${gearId}`);
+//       const url = (`https://camping-cove.onrender.com/updateitem/${gearId}`);
 //       fetch(url, {
 //         method: "PUT",
 //         headers: {
@@ -66,7 +66,7 @@
 //     } else {
 //       const updatedInfo = { updatedQuentity };
 //       //send updated data in backend
-//       const url = (`https://agile-fjord-18815.herokuapp.com/updateitem/${gearId}`);
+//       const url = (`https://camping-cove.onrender.com/updateitem/${gearId}`);
 //       fetch(url, {
 //         method: "PUT",
 //         headers: {
@@ -102,7 +102,7 @@
 //     } else {
 //       const updatedInfo = { updatedQuentity };
 //       //send updated data in backend
-//       const url = (`https://agile-fjord-18815.herokuapp.com/updateitem/${gearId}`);
+//       const url = (`https://camping-cove.onrender.com/updateitem/${gearId}`);
 //       fetch(url, {
 //         method: "PUT",
 //         headers: {

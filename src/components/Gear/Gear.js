@@ -11,7 +11,7 @@ const Gear = ({ gear }) => {
     const handleInvDelete = id => {
         const proceed = window.confirm('Are you Sure?');
         if (proceed) {
-            const url = (`https://agile-fjord-18815.herokuapp.com/gear/=${id}`);
+            const url = (`https://camping-cove.onrender.com/gear/=${id}`);
             fetch(url, {
                 method: 'DELETE'
             })

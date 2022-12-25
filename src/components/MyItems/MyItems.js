@@ -15,7 +15,7 @@ const MyItems = () => {
     useEffect(() => {
         const email = user?.email;
         console.log(email)
-        const url = (`https://agile-fjord-18815.herokuapp.com/singlegear?email=${email}`);
+        const url = (`https://camping-cove.onrender.com/singlegear?email=${email}`);
         fetch(url, {
             method: "GET",
             headers: {
@@ -29,7 +29,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you Sure?');
         if (proceed) {
-            const url = (`https://agile-fjord-18815.herokuapp.com/singlegear/=${id}`);
+            const url = (`https://camping-cove.onrender.com/singlegear/=${id}`);
             fetch(url, {
                 method: 'DELETE'
             })

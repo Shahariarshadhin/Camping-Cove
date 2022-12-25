@@ -12,7 +12,7 @@ const Inventory = () => {
 
 
     useEffect(() => {
-        fetch('https://agile-fjord-18815.herokuapp.com/gear')
+        fetch('https://camping-cove.onrender.com/gear')
             .then(res => res.json())
             .then(data => setGears(data));
     }, []);
